@@ -27,6 +27,8 @@ This guide is for Ubuntu servers accessed via SSH (including self-hosted machine
 - [Management Commands](#management-commands)
 - [Important Notes](#important-notes)
 - [Troubleshooting](#troubleshooting)
+- [Web Visualization Interface](#web-visualization-interface)
+- [Directory Structure Reference](#directory-structure-reference)
 
 ---
 
@@ -749,6 +751,19 @@ journalctl --user -u mihomo -f
 journalctl --user -u mihomo -n 50
 journalctl --user -u subconverter -n 50
 ```
+
+---
+
+## Web Visualization Interface
+
+### 1.Establish SSH port forwarding locally
+
+```bash
+ssh -L 9090:127.0.0.1:9090 <your server account name>@<your server IP>
+```
+
+### 2.Open the visualization panel
+Open in local browser: https://metacubex.github.io/metacubexd/
 
 ---
 
