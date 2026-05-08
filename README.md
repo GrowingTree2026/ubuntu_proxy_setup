@@ -27,6 +27,8 @@
 - [常用管理命令](#常用管理命令)
 - [注意事项](#注意事项)
 - [常见问题排查](#常见问题排查)
+- [Web可视化界面](#Web可视化界面)
+- [目录结构参考](#目录结构参考)
 
 ---
 
@@ -766,6 +768,18 @@ journalctl --user -u mihomo -f
 journalctl --user -u mihomo -n 50
 journalctl --user -u subconverter -n 50
 ```
+
+---
+
+## Web可视化界面
+
+### 1.本地建立SSH端口转发
+```bash
+ssh -L 9090:127.0.0.1:9090 <你的服务器账号名>@<你的服务器IP>
+```
+
+### 2.打开可视化面板
+在本地浏览器中打开：https://metacubex.github.io/metacubexd/
 
 ---
 
