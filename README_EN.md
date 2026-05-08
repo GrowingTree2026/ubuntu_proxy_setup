@@ -759,7 +759,7 @@ journalctl --user -u subconverter -n 50
 ### 1.Establish SSH port forwarding locally
 
 ```bash
-ssh -L 9090:127.0.0.1:9090 <your server account name>@<your server IP>
+ssh -p 22 -L 9090:127.0.0.1:9090 <your server account name>@<your server IP>
 ```
 
 ### 2.Open the visualization panel
